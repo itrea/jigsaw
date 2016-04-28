@@ -1,0 +1,23 @@
+{
+  "name": "Itrea jigsaw boilerplate",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Henrik Oldenborg <mail@zonix.dk>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "v4.0.0-alpha.2",
+    "jquery": "^2.2.3",
+    "tether": "^1.3.1"
+  }
+}
