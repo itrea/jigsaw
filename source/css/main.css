@@ -3169,12 +3169,6 @@ a.label:focus, a.label:hover {
 .alert-danger .alert-link {
   color: #843534; }
 
-@-webkit-keyframes progress-bar-stripes {
-  from {
-    background-position: 1rem 0; }
-  to {
-    background-position: 0 0; } }
-
 @keyframes progress-bar-stripes {
   from {
     background-position: 1rem 0; }
@@ -3245,7 +3239,6 @@ a.label:focus, a.label:hover {
     background-size: 1rem 1rem; } }
 
 .progress-animated[value]::-webkit-progress-value {
-  -webkit-animation: progress-bar-stripes 2s linear infinite;
   animation: progress-bar-stripes 2s linear infinite; }
 
 .progress-animated[value]::-moz-progress-bar {
@@ -3253,7 +3246,6 @@ a.label:focus, a.label:hover {
 
 @media screen and (min-width: 0\0) {
   .progress-animated .progress-bar-striped {
-    -webkit-animation: progress-bar-stripes 2s linear infinite;
     animation: progress-bar-stripes 2s linear infinite; } }
 
 .progress-success[value]::-webkit-progress-value {
@@ -3556,15 +3548,11 @@ button.close {
   outline: 0; }
 
 .modal.fade .modal-dialog {
-  transition: -webkit-transform .3s ease-out;
   transition: transform .3s ease-out;
-  transition: -webkit-transform .3s ease-out,-webkit-transform .3s ease-out,-o-transform .3s ease-out;
   transition: transform .3s ease-out,-webkit-transform .3s ease-out,-o-transform .3s ease-out;
-  -webkit-transform: translate(0, -25%);
   transform: translate(0, -25%); }
 
 .modal.in .modal-dialog {
-  -webkit-transform: translate(0, 0);
   transform: translate(0, 0); }
 
 .modal-open .modal {
@@ -3882,25 +3870,18 @@ button.close {
 
 @media all and (transform-3d), (-webkit-transform-3d) {
   .carousel-inner > .carousel-item {
-    transition: -webkit-transform .6s ease-in-out;
     transition: transform .6s ease-in-out;
-    transition: -webkit-transform .6s ease-in-out,-webkit-transform .6s ease-in-out,-o-transform .6s ease-in-out;
     transition: transform .6s ease-in-out,-webkit-transform .6s ease-in-out,-o-transform .6s ease-in-out;
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    -webkit-perspective: 1000px;
     perspective: 1000px; }
   .carousel-inner > .carousel-item.active.right, .carousel-inner > .carousel-item.next {
     left: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0); }
   .carousel-inner > .carousel-item.active.left, .carousel-inner > .carousel-item.prev {
     left: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0); }
   .carousel-inner > .carousel-item.active, .carousel-inner > .carousel-item.next.left, .carousel-inner > .carousel-item.prev.right {
     left: 0;
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); } }
 
 .carousel-inner > .active, .carousel-inner > .next, .carousel-inner > .prev {
