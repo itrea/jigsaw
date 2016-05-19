@@ -16,3 +16,5 @@ To build the site for production
 ```
 jigsaw build production
 ```
+
+Go to [Jigsaw documentation](http://jigsaw.tighten.co/docs/installation/) for further details
