@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var elixir = require('laravel-elixir');
-             require('laravel-elixir-jade');
+             require('laravel-elixir-pug');
 
 elixir.config.assetsPath = 'source/_assets';
 elixir.config.publicPath = 'source';
@@ -8,12 +8,11 @@ elixir.config.publicPath = 'source';
 elixir.extend('sourcemaps', false);
 elixir(function(mix) {
 
-    mix.jade({
-        baseDir: './source',
+    mix.pug({
         blade: true,
-        search: '**/*.jade',
-        src: '/_assets/jade/',
-        dest: '/'
+        dest: './source/',
+        search: '**/*.pug',
+        src: './source/_assets/pug/',
     });
 
     mix.scripts([

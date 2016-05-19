@@ -2,7 +2,9 @@
   "private": true,
   "devDependencies": {
     "gulp": "^3.8.8",
-    "laravel-elixir-jade": "https://registry.npmjs.org/laravel-elixir-jade/-/laravel-elixir-jade-0.2.4.tgz"
+    "gulp-print": "^2.0.1",
+    "laravel-elixir-pug": "^1.0.1",
+    "pug": "^2.0.0-alpha7"
   },
   "dependencies": {
     "laravel-elixir": "^4.2.0"
